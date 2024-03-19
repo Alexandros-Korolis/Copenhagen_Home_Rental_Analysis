@@ -7,3 +7,5 @@ on dba.dk with filter criteria focused on Copenhagen and surroundings.
 --> 'Home_scrap' file contains the code of the web scraping process.
 --> ads_data.xlsx file contains tabular data. These are the data obtain by webscrapping and are 'dirty'.
 --> 'home_data_cleaning' file contains the code for data cleaning process.
+--> 'Adress_to_lat_long_api' file contains api call to get coordinates of adresses
+--> 'Get_Boarder_Regions' file containes polygon coordinates of areas in Copenhagen
