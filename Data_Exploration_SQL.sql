@@ -88,8 +88,57 @@ from home_data
 group by "district","Rooms","Floor"
 order by "Average rent" asc;
 
+-- Lets check only the top Copehnagen districts ('Vanløse', 'Brønshøj-Husum', 'Amager Øst', 'Valby', 'Amager Vest',
+-- 'Bispebjerg', 'Østerbro', 'Nørrebro', 'Indre By',
+-- 'Vesterbro-Kongens Enghave')
 
+select a."Property type", a."Rooms",a."Floor",a."Furnished",a."Balcony",
+		a."Available from",a."Monthly net rent",a."Utilities",a."Deposit",
+		a."Prepaid rent",a."Move-in price",a."Creation Date",a."district"
+from home_data as a
+inner join bydel as b
+on a."district" = b."navn";
 
+-- Lets create a view of the above table, so I can reuse it later.
+CREATE VIEW top_KBH_districts AS 
+select a."Property type", a."Rooms",a."Floor",a."Furnished",a."Balcony",
+		a."Available from",a."Monthly net rent",a."Utilities",a."Deposit",
+		a."Prepaid rent",a."Move-in price",a."Creation Date",a."district"
+from home_data as a
+inner join bydel as b
+on a."district" = b."navn";
+
+-- Lets get an overview of net rent per district, for one room. Using the view from above.
+select "district","Rooms",round(avg("Monthly net rent")) as "Monthy net rent"
+from top_kbh_districts
+where "Property type" like 'Room'
+and "Rooms" = 1
+group by "district","Rooms"
+order by "Monthy net rent" asc;
+
+-- What about apartments and any nr of rooms. Only in cph top districts.
+select "district","Rooms",round(avg("Monthly net rent")) as "Monthly net rent"
+from top_kbh_districts
+where "Property type" like 'Apartment'
+group by "district","Rooms"
+order by "Monthly net rent" asc;
+
+-- whats the average availability time(in days) per district  ?
+select "district",round(avg("Available from"-"Creation Date")) as "time"
+from top_kbh_districts
+group by "district"
+order by "time" asc;
+
+-- whats the average availability time(in days) per property type  ?
+select "Property type",round(avg("Available from"-"Creation Date")) as "time"
+from top_kbh_districts
+group by "Property type"
+order by "time" asc;
+
+-- Export view table top_kbh_districts to csv
+copy (select * from top_kbh_districts) to 'D:\top_kbh_districs.csv'
+delimiter ','
+csv header;
 
 
 

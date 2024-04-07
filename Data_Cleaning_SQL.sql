@@ -91,10 +91,10 @@ set District = trim(split_part(split_part("Adress",',',3),'-',1));
 
 -- Change Available from to date.
 update home_data
-set "Available from" = replace("Available from",'As soon as possible','3 April 2014');
+set "Available from" = replace("Available from",'As soon as possible','3 April 2024');
 
 update home_data
-set "Available from" = to_date("Available from",'DD Month YYYY')
+set "Available from" = to_date("Available from",'DD Month YYYY');
 
 alter table home_data 
 alter column "Available from" type DATE 
@@ -108,7 +108,45 @@ alter table home_data
 alter column "Creation Date" type DATE 
 using to_date("Creation Date", 'YYYY-MM-DD');
 
+-- Change values of Amager side (amager_data table), east -> Amager Øst, vest -> Amager Vest
+update amager_data
+set "Amager side" = replace("Amager side",'east','Amager Øst');
+
+update amager_data
+set "Amager side" = replace("Amager side",'vest','Amager Vest');
+
+-- Replace the district of Amager area according to whether it belong east or west:
+alter table home_data
+add column Street varchar(255);
+
+update home_data
+set Street = split_part("Adress",',',1);
+
+update home_data as b
+set district = a."Amager side"
+from amager_data as a
+where b."street" = a."Amager adress";
+
+update home_data
+set "district" = replace("district",'København S','Amager Vest');
+
+-- Replace district column with the district names found on bydel table
+-- København Ø -> Østerbro, København NV ->Bispebjerg, København K->Indre By,København V ->Vesterbro-Kongens Enghave
+-- København N -> Nørrebro, Brønshøj->Brønshøj-Husum,
+update home_data
+set "district" = replace(replace("district",'København Ø','Østerbro'),'København NV','Bispebjerg')
+
+update home_data
+set "district" = replace(replace("district",'København K','Indre By'),'København V','Vesterbro-Kongens Enghave')
+
+update home_data
+set "district" = replace(replace("district",'København N','Nørrebro'),'Brønshøj','Brønshøj-Husum')
+
+update home_data
+set "district" = replace("district",'Amager VestV','Vesterbro-Kongens Enghave');
+
 -- Export to csv 
 copy home_data to 'D:\clean_data_db.csv'
 delimiter ','
 csv header;
+
