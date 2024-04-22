@@ -2,7 +2,7 @@
 
 ## Static View of dashboard 
 
-Download it here: https://github.com/Alexandros-Korolis/Copenhagen_Home_Rental_Analysis/blob/main/Report.pbix
+Download interactive dashboard here: https://github.com/Alexandros-Korolis/Copenhagen_Home_Rental_Analysis/blob/main/Report.pbix
 
 ![alt text](cph_rental.PNG)
 
