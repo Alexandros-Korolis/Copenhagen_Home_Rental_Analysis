@@ -1,14 +1,19 @@
 # Copenhagen Home Rental Analysis
 
 ## Purpose 
-The purpose of this project is to analyze various rental advertisements for properties (apartments/rooms) in Copenhagen.
+The purpose of this project is to analyze various rental advertisements for properties (apartments/rooms) in Copenhagen. I will answer questions related to:
+- How do prices change depending on the house type?
+- Which areas contain the biggest amount of student friendly appartments/rooms?
+- How does prices changing per district?
+- What is the average availability time(in days) per district?
+- What kind of extra utilities does the price usually includes?
 
 ## Steps
 &middot;The first stage of the project consists of obtaining data by web scraping. This is done by scrapping the house ads found on boligportal.dk with filter criteria focused on Copenhagen. 
 
 &middot;Afterwards, data cleaning and exploration were performed by creating a PostgreSQL database locally and manipulating it using SQL.
 
-&middot;Finally, create an interactive dashboard (Power BI) and report the findings.
+&middot;Finally, create an interactive dashboard (focused on top Copenhagen Districts)and report the findings.
 
 ## Information about the files: 
 1) 'Home_scrap' file contains the code of the web scraping process done in Python.
@@ -21,3 +26,6 @@ The purpose of this project is to analyze various rental advertisements for prop
 8) 'districts_correct' same as above but in json format. Need it in order to present a visual map of Copenhagen.
 9) 'top_kbh_districs' contains data about the top districs in Copenhagen.
 10) 'Report' is Power BI report/responsive dashboard.
+
+## View of dashboard 
+![Copenhagen Top Districts Rental Analysis](C:\Users\admin\Desktop\cph_rental.png)
