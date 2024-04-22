@@ -27,5 +27,7 @@ The purpose of this project is to analyze various rental advertisements for prop
 9) 'top_kbh_districs' contains data about the top districs in Copenhagen.
 10) 'Report' is Power BI report/responsive dashboard.
 
-## View of dashboard 
+## Findings/Report
+
+## Static View of dashboard 
 ![alt text](cph_rental.PNG)
