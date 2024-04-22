@@ -10,9 +10,9 @@ Download interactive dashboard here: https://github.com/Alexandros-Korolis/Copen
 The purpose of this project is to analyze various rental advertisements for properties (apartments/rooms) in Copenhagen. I will answer questions related to:
 - How do prices change depending on the type of house?
 - Which areas contain the largest number of student-friendly apartments/rooms?
-- How do prices change per district?
-- What is the average availability time (in days) per district?
-- What kind of additional utilities are typically included in the price?
+- Which district is suitable for students?
+- When should one start searching for rental properties?
+- What areas or properties are suitable for couples?
 
 ## Steps
 &middot;The first stage of the project consists of obtaining data by web scraping. This is done by scrapping the house ads found on boligportal.dk with filter criteria focused on Copenhagen. 
