@@ -1,12 +1,18 @@
 # Copenhagen Home Rental Analysis
 
+## Static View of dashboard 
+
+Download it here: https://github.com/Alexandros-Korolis/Copenhagen_Home_Rental_Analysis/blob/main/Report.pbix
+
+![alt text](cph_rental.PNG)
+
 ## Purpose 
 The purpose of this project is to analyze various rental advertisements for properties (apartments/rooms) in Copenhagen. I will answer questions related to:
-- How do prices change depending on the house type?
-- Which areas contain the biggest amount of student friendly appartments/rooms?
-- How does prices changing per district?
-- What is the average availability time(in days) per district?
-- What kind of extra utilities does the price usually includes?
+- How do prices change depending on the type of house?
+- Which areas contain the largest number of student-friendly apartments/rooms?
+- How do prices change per district?
+- What is the average availability time (in days) per district?
+- What kind of additional utilities are typically included in the price?
 
 ## Steps
 &middot;The first stage of the project consists of obtaining data by web scraping. This is done by scrapping the house ads found on boligportal.dk with filter criteria focused on Copenhagen. 
@@ -28,6 +34,19 @@ The purpose of this project is to analyze various rental advertisements for prop
 10) 'Report' is Power BI report/responsive dashboard.
 
 ## Findings/Report
+- For the purpose of this analysis, with the term Copenhagen districts I describe the following areas/districts in Copenhagen: Amager East/West, Bispebjerg, Brønshøj-Husum, Indre By, Nørrebro, østerbro, Valby, Vanløse. While with the term surroundings I describe the areas around Copenhagen.
 
-## Static View of dashboard 
-![alt text](cph_rental.PNG)
+- Data shows that the average monthly net rent for one room in Copenhagen districts is
+around 5600dkk, average deposit around 10000dkk average move-in price 18940dkk.
+
+- Cheapest Copenhagen district to rent one room is Bispebjerg, with average monthly-net rent 4640dkk.
+
+- Bispebjerg has the lowest average net monthly rent for one room apartments in Copenhagen districs, with approximately 7720dkk. 
+
+- Couples or two friends will need on average to pay 13220dkk per month, if they plan to rent in one of Copenhagen districts. In this case, the majority of the rental properties will be unfurnished.
+
+- Properties with balcony on average tend to be a bit more expensive that the ones without. (Both in Copenhagen districts and surroundings)
+
+- Vesterbro seems to have the highest amount of student-only type of properties, in Copenhagen and each surroundings. Whereas, the cheapest districts in Copenhagen for students seems to be Bispebjerg, Brønshøj-Husum, Vanløse ( monthly average net rent: 4712dkk, 4896dkk, 4999dkk).
+
+- On average one has to start searching for a Townhouse 74 days before the desired move-in date, for Room(s) 85 days before, Apartment 88 days before and House 99 days before.
