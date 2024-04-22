@@ -28,4 +28,4 @@ The purpose of this project is to analyze various rental advertisements for prop
 10) 'Report' is Power BI report/responsive dashboard.
 
 ## View of dashboard 
-![Copenhagen Top Districts Rental Analysis](C:\Users\admin\Desktop\cph_rental.png)
+![Copenhagen Top Districts Rental Analysis](cph_rental.png)
