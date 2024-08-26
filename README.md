@@ -30,17 +30,17 @@ The purpose of this project is to analyze rental advertisements for apartments a
 &middot;STEP 4: Finally, I will connect Power BI to the PostgreSQL database, create an interactive dashboard focused on Copenhagen's districts, and report the findings.
 
 ## File Structure of repository 
-|-- README.md
-|-- database_design/
-|   |-- create_tables_insert_data.sql   # SQL script to create tables and insert initial data
-|   |-- database_design_cleaning.sql    # SQL script for database design and additional cleaning tasks
-|-- eda/
-|   |-- EDA_data_exploration.sql        # SQL script for exploratory data analysis
-|-- web_scraping/
-|   |-- ads_data.xlsx                   # Result of the web scraping in Excel format
-|   |-- amager_sides.xlsx               # Additional scraped data specific to Amager
-|   |-- bydel.xlsx                      # Data for different districts (bydel) in Copenhagen
-|   |-- Home_scrape.ipynb               # Jupyter Notebook for the web scraping process
+|-- README.md  
+|-- database_design/  
+|   |-- create_tables_insert_data.sql   # SQL script to create tables and insert initial data  
+|   |-- database_design_cleaning.sql    # SQL script for database design and additional cleaning tasks  
+|-- eda/  
+|   |-- EDA_data_exploration.sql        # SQL script for exploratory data analysis  
+|-- web_scraping/  
+|   |-- ads_data.xlsx                   # Result of the web scraping in Excel format  
+|   |-- amager_sides.xlsx               # Additional scraped data specific to Amager  
+|   |-- bydel.xlsx                      # Data for different districts (bydel) in Copenhagen  
+|   |-- Home_scrape.ipynb               # Jupyter Notebook for the web scraping process  
 
 ## About the database 
 
