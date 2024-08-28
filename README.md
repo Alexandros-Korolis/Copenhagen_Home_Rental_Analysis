@@ -80,10 +80,10 @@ Vesterbro-Kongens Enghave (53%),Indre By (~48%)
 <strong>8. Which is the most pet friendly district ?</strong>
 Amager Vest, Amager East and Brønshøj-Husum (50%, 43%, 30% respectively of total apartments in these districts are pet friendly)
 
-<strong>8. Which is the most pet friendly district ?</strong>
+<strong>9. What is the most common rental period per type of apartment ?</strong>
 ![alt text](q4.PNG)
 
-<strong>9. Which are the top 5 most Senior Friendly streets ?</strong>
+<strong>10. Which are the top 5 most Senior Friendly streets ?</strong>
 Top 5 most Senior Friendly streets are : Islands Brygge, Irlandsvej, Englandsvej, Bådehavnsgade and Else Alfelts Vej.
 
 ## Future Plans 
