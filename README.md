@@ -58,7 +58,7 @@ The outcome of the web scraping was one .xlsx file with various columns. I desig
 
 ![alt text](q2.PNG)
 
-<strong>3. What about one room apartments ?</strong>
+<strong>3. Whats the average net rent per type of property and number of rooms ?</strong>
 
 ![alt text](q3.PNG)
 
