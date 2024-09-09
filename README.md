@@ -1,6 +1,16 @@
 # Copenhagen Home Rental Analysis
 
-## Static View of the report 
+<h2><strong>Table of Contents</strong></h2>
+
+- [Report View](#report-view)
+- [Purpose](#purpose)
+- [Pipeline](#pipeline)
+- [File Structure of Repository](#file-structure-of-repository)
+- [About the Database](#about-the-database)
+- [Findings/Report](#findingsreport)
+- [Future Plans](#future-plans)
+
+## Report View 
 
 Download report here: https://github.com/Alexandros-Korolis/Copenhagen_Home_Rental_Analysis/blob/main/Report.pbix
 
@@ -20,7 +30,7 @@ The purpose of this project is to analyze rental advertisements for apartments a
 - What is the most common rental period per type of apartment ?
 - Which are the top 5 most Senior Friendly streets ?
 
-## Steps
+## Pipeline
 &middot;STEP 1: The first stage of the project involves obtaining data through web scraping. This will be done by scraping housing advertisements from boligportal.dk, using filter criteria focused on Copenhagen. 
 
 &middot;STEP 2: Afterward, I will design and create a PostgreSQL database and migrate it to the cloud.
